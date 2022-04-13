@@ -1,0 +1,75 @@
+version: '3.1'
+services:
+  label_nginx:
+    image: labelfree/open_frontend:latest
+    ports:
+      - 8080:80
+
+  label_api:
+    image: labelfree/open:latest
+    command: gunicorn --conf /code/config/gunicorn.py  --log-config /code/config/logging.conf --chdir /code/labelfree app:app
+    environment:
+      SQLALCHEMY_DATABASE_URI: mysql+pymysql://root:${MYSQL_ROOT_PASSWORD}@label_mysql:3306/labelfree
+      REDIS_HOST: label_redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD:
+      S3_ENDPOINT_URL: http://${LABEL_HOST}:9000
+      S3_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+      FLASK_APP: labelfree.app
+      LABEL_ENV: dev
+      LABEL_BUILD: pro
+
+    restart: always
+
+  label_celery_worker:
+    image: labelfree/open:latest
+    command: celery -A labelfree.app.celery worker -l info
+    environment:
+      SQLALCHEMY_DATABASE_URI: mysql+pymysql://root:${MYSQL_ROOT_PASSWORD}@label_mysql:3306/labelfree
+      REDIS_HOST: label_redis
+      REDIS_PASSWORD:
+      S3_ENDPOINT_URL: http://${LABEL_HOST}:9000
+      S3_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+      FLASK_APP: labelfree.app
+      LABEL_ENV: dev
+
+    restart: always
+
+  label_mysql:
+    restart: always
+    image: mysql:5.7.22
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE: labelfree
+    #    ports:
+    #      - 3307:3306
+    command: --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+      --lower_case_table_names=1
+      --max_allowed_packet=128M
+      --sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+
+  label_redis:
+    image: bitnami/redis:5.0.4
+    environment:
+      REDIS_PASSWORD:
+    restart: always
+
+  label_minio:
+    image: quay.io/minio/minio
+    environment:
+      MINIO_ROOT_PASSWORD:
+      MINIO_ROOT_USER: labelfree
+    command: server /data --console-address ":9001"
+    ports:
+      - 9000:9000
+      - 9001:9001
+    volumes:
+      - ./minio_data:/data
+
+    restart: always
+
