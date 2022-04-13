@@ -9,7 +9,7 @@ Labelfree 是一个开放的、可私有化部署的标注系统。Labelfree 提
 - 高性能。内置对象存储服务，在硬件充足的情况下，可以支撑海量数据的标注。
 - 一键标注。提供专业、一站式的数据标注服务。
 
-![标注动画.gif](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label/%E6%A0%87%E6%B3%A8%E5%8A%A8%E7%94%BB.gif)
+![标注动画.gif](https://github.com/IndustryEssentials/label-free/blob/main/images/label.gif)
 
 ## 部署指引
 
