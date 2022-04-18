@@ -20,8 +20,9 @@ Labelfree 是一个开放的、可私有化部署的标注系统。Labelfree 提
 git clone https://github.com/IndustryEssentials/label-free.git
 ```
 
-**2.docker-compose启动**
-1.设置服务IP地址。请将`YOUR_HOST_IP`替换为服务器真实IP
+**2.环境变量配置**
+
+请将`YOUR_HOST_IP`替换为服务器真实IP
 
 ```bash
 export LABEL_HOST=YOUR_HOST_IP
