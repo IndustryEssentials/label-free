@@ -33,7 +33,7 @@ export LABEL_HOST=YOUR_HOST_IP
 docker-compose up -d
 ```
 
-**3.访问**
+**4.访问**
 
 ```bash
 http://YOUR_HOST_IP:8080
