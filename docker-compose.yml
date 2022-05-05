@@ -8,6 +8,8 @@ services:
   label_api:
     image: labelfree/open:latest
     command: gunicorn --conf /code/config/gunicorn.py  --log-config /code/config/logging.conf --chdir /code/labelfree app:app
+    volumes:
+      - ./backend_log:/var/log/gunicorn
     environment:
       SQLALCHEMY_DATABASE_URI: mysql+pymysql://root:${MYSQL_ROOT_PASSWORD}@label_mysql:3306/labelfree
       REDIS_HOST: label_redis
@@ -42,8 +44,6 @@ services:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD:
       MYSQL_DATABASE: labelfree
-    #    ports:
-    #      - 3307:3306
     command: --character-set-server=utf8mb4
       --collation-server=utf8mb4_general_ci
       --explicit_defaults_for_timestamp=true
@@ -57,6 +57,8 @@ services:
     image: bitnami/redis:5.0.4
     environment:
       REDIS_PASSWORD:
+    volumes:
+      - ./redis-persistence:/bitnami/redis/data
     restart: always
 
   label_minio:
@@ -67,9 +69,7 @@ services:
     command: server /data --console-address ":9001"
     ports:
       - 9000:9000
-      - 9001:9001
     volumes:
       - ./minio_data:/data
 
     restart: always
-
