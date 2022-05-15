@@ -54,13 +54,14 @@ services:
       - ./mysql_data:/var/lib/mysql
 
   label_redis:
-    image: bitnami/redis:5.0.4
-    environment:
-      REDIS_PASSWORD:
+    image: redis:5.0.4
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
     volumes:
-      - ./redis-persistence:/bitnami/redis/data
+      - ./redis-data:/data
+    networks:
+      - labelfreenetwork
     restart: always
-
+    
   label_minio:
     image: quay.io/minio/minio
     environment:
