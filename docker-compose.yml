@@ -58,8 +58,6 @@ services:
     command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
     volumes:
       - ./redis-data:/data
-    networks:
-      - labelfreenetwork
     restart: always
     
   label_minio:
