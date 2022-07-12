@@ -40,6 +40,13 @@ docker-compose up -d
 http://YOUR_HOST_IP:8080
 ```
 
+默认管理员账号、密码：
+
+```
+ymir@intellif.com
+ymir@2022
+```
+
 一切完成，开始标注工作吧！
 
 # 使用指南
