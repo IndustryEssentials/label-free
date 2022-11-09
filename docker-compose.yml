@@ -25,7 +25,7 @@ services:
 
   label_celery_worker:
     image: labelfree/open:latest
-    command: celery -A labelfree.app.celery worker -l info
+    command: celery -A labelfree.app.celery worker -l info -B
     environment:
       SQLALCHEMY_DATABASE_URI: mysql+pymysql://root:${MYSQL_ROOT_PASSWORD}@label_mysql:3306/labelfree
       REDIS_HOST: label_redis
