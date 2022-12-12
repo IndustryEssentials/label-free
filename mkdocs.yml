@@ -6,6 +6,7 @@ theme:
     - navigation.instant
   palette:
     primary: teal
+  font: false
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
