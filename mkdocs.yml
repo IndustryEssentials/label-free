@@ -1,12 +1,36 @@
-site_name: My Docs
+site_name: LabelFree文档中心
 theme:
   name: material
   language: zh
-extra:
-  alternate:
-    - name: English
-      link: /en/
-      lang: en
-    - name: Deutsch
-      link: /de/
-      lang: de
+  features:
+    - navigation.instant
+  palette:
+    primary: teal
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+repo_url: https://github.com/IndustryEssentials/label-free
+nav:
+  - 首页: index.md
+  - 部署: chapters/deploy.md
+  - 快速开始:
+      - 目标检测: chapters/box.md
+      - 图像分割: chapters/seg.md
+  - 数据集:
+      - COCO: chapters/coco.md
+      - VOC: chapters/voc.md
+      # - YOLO: chapters/yolo.md
+      # - LabelFree: chapters/labelfree.md
+  - 关于: about.md
+
+# extra:
+#   alternate:
+#     - name: English
+#       link: /en/
+#       lang: en
+#     - name: Deutsch
+#       link: /de/
+#       lang: de
