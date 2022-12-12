@@ -1,0 +1,12 @@
+site_name: My Docs
+theme:
+  name: material
+  language: zh
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
