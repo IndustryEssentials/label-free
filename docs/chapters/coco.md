@@ -1,8 +1,8 @@
-# COCO数据集 ——stuff segmentation
+## COCO数据集 ——stuff segmentation
 
 官网：https://cocodataset.org/#format-data
 
-目录结构
+### 目录结构
 
 ```yml
 coco_dir
@@ -15,7 +15,7 @@ coco_dir
      └── xxx.jpg
 ```
 
-Demo:
+### 示例:
 
 ```JSON
 {
@@ -79,60 +79,57 @@ Demo:
 }
 ```
 
-Annotation文件格式
-
-总体格式：
+### 总体格式：
 
 ```JSON
 {
-    "info": info,#字典,图片基本信息，时间，版本，贡献者，可为空
-    "licenses": [license],#列表，内容为字典，版权许可证，可为空
-    "images":[image],#列表，内容为字典，列表长度等同于划入训练集（或验证集）的图片数量
-    "annotations":[annotation],#列表，内容为字典，列表长度等同地训练集（或验证集）中
-    bounding box的数量
-    "categories":[category] #列表，内容为字典，列表长度等同于数据集类别的数
+    "info": info,               #字典,图片基本信息，时间，版本，贡献者，可为空
+    "licenses": [license],      #列表，内容为字典，版权许可证，可为空
+    "images":[image],           #列表，内容为字典，列表长度等同于划入训练集（或验证集）的图片数量
+    "annotations":[annotation], #列表，内容为字典，列表长度等同地训练集（或验证集）中bounding box的数量
+    "categories":[category]     #列表，内容为字典，列表长度等同于数据集类别的数
 }
 ```
 
-info内容：
+### info内容：
 
 ```JSON
  "info": 
         {
-        "description": "COCO 2017 Dataset",#描述
-        "url": "http://cocodataset.org",#图片地址
-        "version": "1.0",#版本
-        "year": 2017,#年份
-        "contributor": "COCO Consortium",#贡献者
-        "date_created": "2017/09/01"#创建时间
+        "description": "COCO 2017 Dataset",     # 描述
+        "url": "http://cocodataset.org",        # 图片地址
+        "version": "1.0",                       # 版本
+        "year": 2017,                           # 年份
+        "contributor": "COCO Consortium",       # 贡献者
+        "date_created": "2017/09/01"            # 创建时间
     }
 ```
 
-license内容：
+### license内容：
 
 ```JSON
 "licenses": [
         {
-            "url": "http://creativecommons.org/licenses/by-nc-sa/2.0/",#许可证网路路径
-            "id": 1,#许可证ID
-            "name": "Attribution-NonCommercial-ShareAlike License"#许可证名称
+            "url": "http://creativecommons.org/licenses/by-nc-sa/2.0/", #许可证网路路径
+            "id": 1,                                                    #许可证ID
+            "name": "Attribution-NonCommercial-ShareAlike License"      #许可证名称
         }]
         
 ```
 
-images内容：
+### images内容：
 
 ```JSON
    "images": 
         [{
-            "license": 4,#license id
-            "file_name": "000000397133.jpg",#图片文件名 
-            "coco_url": "http://images.cocodataset.org/val2017/000000397133.jpg",#图片网络地址路径
-            "height": 427,# 图像高度
-            "width": 640,# 图像宽度
-            "date_captured": "2013-11-14 17:02:52",#拍摄日期
-            "flickr_url": "http://farm7.staticflickr.com/6116/6255196340_da26cf2c9e_z.jpg",#flickr网络地址
-            "id": 397133 #图片的身份ID
+            "license": 4,                                                           # license id
+            "file_name": "000000397133.jpg",                                        # 图片文件名 
+            "coco_url": "http://images.cocodataset.org/val2017/000000397133.jpg",   # 图片网络地址路径
+            "height": 427,                                                          # 图像高度
+            "width": 640,                                                           # 图像宽度
+            "date_captured": "2013-11-14 17:02:52",                                 #拍摄日期
+            "flickr_url": "http://farm7.staticflickr.com/6116/625519_z.jpg",        #flickr网络地址
+            "id": 397133                                                            #图片的身份ID
         }] 
 ```
 
@@ -150,39 +147,49 @@ annotation内容：
                     423.01,
                     510.45,
                     423.01
-                ]# 分割信息(iscrowd=0的时候，表示这是一个单独的物体，轮廓用Polygon(多                边形的点)表示，iscrowd=1的时候表示两个没有分开的物体，轮廓用RLE编码表示)
+                ]                       # 分割信息（具体解释见下文）
             ],
-            "area": 702.1057499999998,#segmentation的面积
-            "iscrowd": 0,#polygon or rle
-            "image_id": 289343,#图片的身份ID
+            "area": 702.1057499999998,  #segmentation的面积
+            "iscrowd": 0,               #polygon or rle
+            "image_id": 289343,         #图片的身份ID
             "bbox":[
                 473.07,
                 395.93,
                 38.65,
-                28.67], #目标框位置 [x,y,width,height]左上角顶点坐标以及宽、高
-            "category_id": 18,#标签类别ID
-            "id": 1768 #框的身份编号
+                28.67],                 #目标框位置 [x,y,width,height]左上角顶点坐标以及宽、高
+            "category_id": 18,          #标签类别ID
+            "id": 1768                  #框的身份编号
         }]
 ```
 
 segmentation内容
 
-- "iscrowd": 0 if your segmentation based on polygon
+- "iscrowd": 0 表示轮廓用Polygon(多边形的点)表示
 
 ```JSON
 "segmentation": [
-    [
-        289.74,
-        443.39
-    ],
-    [
-        289.74,
-        443.39
-    ]
+                [
+                    510.66,
+                    423.01,
+                    511.72,
+                    ...
+                    423.01,
+                    510.45,
+                    423.01
+                ]   ,
+                [
+                    510.66,
+                    423.01,
+                    511.72,
+                    ...
+                    423.01,
+                    510.45,
+                    423.01
+                ]   
 ]
 ```
 
-- "iscrowd": 1 if your segmentation based uncompressed RLE (crowd)
+- "iscrowd": 1 表示轮廓用RLE编码表示
 
 ```JSON
  "segmentation": {

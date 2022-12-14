@@ -1,4 +1,4 @@
-# 欢迎使用Labelfree
+# 欢迎使用Labelfree👋👋👋👋👋👋
 
 Labelfree 是一个开放的、可私有化部署的标注系统。
 
