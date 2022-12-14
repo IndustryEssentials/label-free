@@ -16,7 +16,8 @@ taskname.zip/
 ```
 
 xml格式：
-自定义字段：
+自定义字段:
+
 - rotate_angle: 旋转角度，顺时针为正，单位为度
 
 ```XML
@@ -36,7 +37,7 @@ xml格式：
   <segmented>1</segmented>                          # 图像是否用于分割
   <object>                                          # 一个目标对象的信息
     <name>aeroplane</name>                          # 目标的类别名
-    <pose>Frontal</pose>                            # 拍摄角度，自己的数据集这里是Unspecified
+    <pose>Frontal</pose>                            # 拍摄角度，Unspecified
     <truncated>0</truncated>                        # 是否被截断，0表示完整未截断
     <difficult>0</difficult>                        # 是否难以识别，0表示不难识别
     <bndbox>                                        # 边界框信息
