@@ -13,6 +13,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 repo_url: https://github.com/IndustryEssentials/label-free
 nav:
   - 首页: index.md
@@ -26,7 +31,8 @@ nav:
       # - YOLO: chapters/yolo.md
       # - LabelFree: chapters/labelfree.md
   - 关于: about.md
-
+plugins:
+   - glightbox
 # extra:
 #   alternate:
 #     - name: English
