@@ -1,8 +1,6 @@
 ## 交互指南
 
-![img](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B.gif)
-
-
+![img](https://files.catbox.moe/7aczgb.gif){ loading=lazy }
 
 ## 常用快捷键
 

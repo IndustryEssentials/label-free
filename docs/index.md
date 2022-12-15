@@ -13,5 +13,5 @@ Labelfree 提供了一个操作简单、数据可靠、高性能的数据标注�
 - 一键标注。提供专业、一站式的数据标注服务。
 
 
-![标注动画.gif](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label.gif){ align=left }
+![标注动画.gif](https://files.catbox.moe/7aczgb.gif){ loading=lazy }
 
