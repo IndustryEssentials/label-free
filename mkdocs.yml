@@ -27,9 +27,21 @@ nav:
   - 首页: index.md
   - 一键部署: chapters/deploy.md
   - 快速开始:
+      - 创建项目: chapters/quickstart-createproject.md
       - 目标检测: chapters/box.md
       - 图像分割: chapters/seg.md
-  - 数据集:
+      - 数据导出: chapters/quickstart-export.md
+  - 用户手册:
+      - 部署: chapters/docker-deploy.md
+      - 项目管理:
+          - 创建项目: chapters/manual/createproject.md
+          - 项目详情: chapters/manual/projectdetail.md
+      - 用户管理: 
+        - 权限管理: chapters/manual/user.md
+        - 标注组管理: chapters/manual/group.md
+      - 一键标注: chapters/manual/OneclickLabeling.md
+      - 数据导出: chapters/manual/export.md
+  - 数据格式:
       - COCO: chapters/coco.md
       - VOC: chapters/voc.md
       # - YOLO: chapters/yolo.md
@@ -37,11 +49,3 @@ nav:
   - 关于: about.md
 plugins:
    - glightbox
-# extra:
-#   alternate:
-#     - name: English
-#       link: /en/
-#       lang: en
-#     - name: Deutsch
-#       link: /de/
-#       lang: de

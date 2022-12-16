@@ -12,7 +12,10 @@ cd label-free
 ```bash
 docker-compose up -d
 ```
-
+!!! note
+    最新版本docekr-compose命令已经改为docker compose，如果您使用的是最新版本，请使用:
+    
+    docker compose up -d
 ### 3 访问
 
 ```bash
