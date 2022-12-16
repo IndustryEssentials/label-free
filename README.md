@@ -46,9 +46,12 @@
   <ol>
     <li>
       <a href="#特性">特性</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+    </li>
+    <li>
+      <a href="#一键部署">一键部署</a>
+    </li>
+    <li>
+      <a href="#使用指南">使用指南</a>
     </li>
   </ol>
 </details>
@@ -60,11 +63,12 @@
 - 数据安全性高。可私有化内网部署，不存在数据泄漏风险。
 - 高性能。原生支持对象存储，不限制标注数据大小，支持海量数据标注。
 - 一键标注。提供专业、一站式的数据标注服务。
+<p align="right">(<a href="#readme-top">返回顶部</a>)</p>
 
+<!-- GETTING STARTED -->
+## 一键部署
 
-## 部署指引
-
-### 1 clone 本仓库
+1 clone 本仓库
 请执行以下命令：
 ```bash
 git clone https://github.com/IndustryEssentials/label-free.git
@@ -72,12 +76,12 @@ git clone https://github.com/IndustryEssentials/label-free.git
 cd label-free
 ```
 
-### 2 启动
+2 启动
 ```bash
 docker-compose up -d
 ```
 
-### 3 访问
+3 访问
 
 ```bash
 http://YOUR_HOST_IP:8080
@@ -95,8 +99,9 @@ labelfree@2022
 ```
 
 一切完成，开始标注工作吧！🍻🍻🍻
+<p align="right">(<a href="#readme-top">返回顶部</a>)</p>
 
-# 使用指南
+## 使用指南
 
 ## 1.创建项目
 
