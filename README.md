@@ -1,6 +1,28 @@
-# 欢迎使用LabelFree👋👋👋
+<a name="readme-top"></a>
 
-Labelfree 是一个开放的、可私有化部署的标注系统。旨在提供一个操作简单、数据可靠、高性能的数据标注系统，为算法服务提供可靠的底层数据支撑。
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/IndustryEssentials/label-free">
+    <img src="docs/assets/logo.svg" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">欢迎使用LabelFree👋👋👋</h3>
+
+  <p align="center">
+    Labelfree 是一个开放的、可私有化部署的标注系统。旨在提供一个操作简单、数据可靠、高性能的数据标注系统，为算法服务提供可靠的底层数据支撑。
+    <br />
+    <a href="https://industryessentials.github.io/label-free/"><strong>文档 »</strong></a>
+    <br />
+    <br />
+    ·
+    <a href="https://github.com/IndustryEssentials/label-free/issues">反馈</a>
+    ·
+    <a href="https://github.com/IndustryEssentials/label-free/issues">讨论</a>
+  </p>
+</div>
+
+
 
 </div>
 
@@ -18,10 +40,23 @@ Labelfree 是一个开放的、可私有化部署的标注系统。旨在提供�
 </table>
 </div>
 
-## 特点
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>目录</summary>
+  <ol>
+    <li>
+      <a href="#特性">特性</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+## 特性
 - 一切为了提升标注生产效率。提供强大的标注交互界面、丰富的快捷键、流畅的多人协作等功能，让标注更加高效。
 - 支持交互式辅助分割标注。对比传统的分割标注，LabelFree 提供了交互式的分割标注，可以大大提升标注效率。
-- 易于部署，基于 Docker :simple-docker:，简单几条命令即可部署。
+- 易于部署，基于 Docker ，简单几条命令即可部署。
 - 数据安全性高。可私有化内网部署，不存在数据泄漏风险。
 - 高性能。原生支持对象存储，不限制标注数据大小，支持海量数据标注。
 - 一键标注。提供专业、一站式的数据标注服务。
