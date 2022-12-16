@@ -1,4 +1,5 @@
 site_name: LabelFree文档中心
+edit_uri: ""
 theme:
   name: material
   language: zh
