@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/IndustryEssentials/label-free">
-    <img src="docs/assets/logo.jpg" alt="Logo" width="648" height="214">
+    <img src="docs/assets/logo.jpg" alt="Logo" width="665" height="234">
   </a>
 
   <h3 align="center">欢迎使用LabelFree👋👋👋</h3>
