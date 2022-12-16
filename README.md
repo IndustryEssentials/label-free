@@ -125,7 +125,7 @@ labelfree@2022
 
 创建项目之后点击标注按钮进入标注环节
 
-![img](https://files.catbox.moe/7aczgb.gif){ loading=lazy }
+![img](https://files.catbox.moe/7aczgb.gif)
 
 ### 常用快捷键
 
