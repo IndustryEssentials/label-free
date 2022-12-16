@@ -8,7 +8,7 @@ theme:
     primary: teal
   logo: assets/logo.svg
   favicon: assets/lbf.ico
-  # font: false
+  font: false
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
