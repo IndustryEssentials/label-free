@@ -20,6 +20,10 @@ http://YOUR_HOST_IP:8080
 ```
 
 默认管理员账号、密码：
+!!! info inline end
+
+    如发现无法新建项目，请确认使用的是默认管理员账号登陆。
+    新注册账号默认为标注员，无新建项目权限。
 
 ```
 labelfree@viesc.com

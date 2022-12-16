@@ -1,6 +1,5 @@
-## COCO数据集 ——stuff segmentation
 
-官网：https://cocodataset.org/#format-data
+COCO数据集 ——stuff segmentation：https://cocodataset.org/#format-data
 
 ### 目录结构
 

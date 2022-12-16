@@ -6,22 +6,26 @@ theme:
     - navigation.instant
   palette:
     primary: teal
-  font: false
+  logo: assets/logo.svg
+  favicon: assets/lbf.ico
+  # font: false
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
   - attr_list
   - md_in_html
+  - tables
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 repo_url: https://github.com/IndustryEssentials/label-free
 nav:
   - 首页: index.md
-  - 部署: chapters/deploy.md
+  - 一键部署: chapters/deploy.md
   - 快速开始:
       - 目标检测: chapters/box.md
       - 图像分割: chapters/seg.md
