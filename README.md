@@ -12,7 +12,7 @@
   <p align="center">
     Labelfree 是一个开放的、可私有化部署的标注系统。旨在提供一个操作简单、数据可靠、高性能的数据标注系统，为算法服务提供可靠的底层数据支撑。
     <br />
-    <a href="https://industryessentials.github.io/label-free/"><strong>文档 »</strong></a>
+    <a href="https://labelfree.gitee.io/label-free/"><strong>文档 »</strong></a>
     <br />
     <br />
     ·
