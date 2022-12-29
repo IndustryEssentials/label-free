@@ -78,12 +78,19 @@ cd label-free
 ```bash
 docker-compose up -d
 ```
+
+如果使用的是的docker-compose-plugin请尝试使用：
+
+```bash
+docker compose up -d
+```
+
 *ps: 系统初始化需要60s左右，请耐心等待。*
 
 3 访问
 
 ```bash
-http://YOUR_HOST_IP:8080
+http://localhost:8080
 ```
 
 默认管理员账号、密码：
