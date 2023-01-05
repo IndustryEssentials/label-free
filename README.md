@@ -147,7 +147,7 @@ labelfree@2022
 | Z           | 撤销         |
 | V           | 恢复         |
 | Delete      | 删除         |
-| 滚轮；+ / -  | 缩放图片     |
+| 滚轮；+ / - | 缩放图片     |
 | M           | 移动图片     |
 | F           | 隐藏类别     |
 | G           | 隐藏属性     |
@@ -156,4 +156,4 @@ labelfree@2022
 | K           | 显示全部     |
 | C           | 清空全部     |
 
-更多信息见文档中心：[https://industryessentials.github.io/label-free/](https://industryessentials.github.io/label-free/)
+更多信息见文档中心：[文档中心](https://labelfree.gitee.io/label-free/)

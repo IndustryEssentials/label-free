@@ -1,6 +1,9 @@
 ## 交互指南
 
-![img](https://files.catbox.moe/7aczgb.gif){ loading=lazy }
+![img](https://files.catbox.moe/ohnrrq.gif){ loading=lazy }
+
+!!! note
+    4.0.0版本开始支持旋转框
 
 ## 常用快捷键
 

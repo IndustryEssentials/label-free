@@ -9,8 +9,6 @@ services:
   label_api:
     image: labelfree/open:latest
     command: gunicorn --conf /code/config/gunicorn.py  --log-config /code/config/logging.conf --chdir /code/labelfree app:app
-    volumes:
-      - ./backend_log:/var/log/gunicorn
     environment:
       SQLALCHEMY_DATABASE_URI: mysql+pymysql://root:${MYSQL_ROOT_PASSWORD}@label_mysql:3306/labelfree
       REDIS_HOST: label_redis
@@ -40,8 +38,6 @@ services:
     image: labelfree/open_seg:latest
     command: gunicorn --conf /code/config/gunicorn.py  --log-config /code/config/logging.conf --chdir /code/segmentation app:app
     runtime: ${SERVER_RUNTIME}
-    volumes:
-      - ./seg_log:/var/log/gunicorn
     environment:
       FLASK_APP: labelfree.app
       SEG_DEBUG: "false"
@@ -67,14 +63,14 @@ services:
       --max_connections=1000
       --sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO"
     volumes:
-      - ./mysql_data:/var/lib/mysql
+      - mysql_data:/var/lib/mysql
     restart: always
 
   label_redis:
     image: redis:5.0.4
     command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
     volumes:
-      - ./redis-data:/data
+      - redis_data:/data
     restart: always
     
   label-minio:
@@ -84,5 +80,10 @@ services:
       MINIO_ROOT_USER: labelfree
     command: server /data --console-address ":9001"
     volumes:
-      - ./minio_data:/data
+      - minio_data:/data
     restart: always
+
+volumes:
+  mysql_data:
+  redis_data:
+  minio_data:
