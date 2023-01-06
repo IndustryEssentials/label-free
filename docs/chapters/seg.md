@@ -33,4 +33,4 @@
 
 算法结果需要调整，可以将掩膜转为多边形后，对多边形进行微调
 
-![img](https://files.catbox.moe/mys04i.gif){ loading=lazy }
+![img](https://files.catbox.moe/iiqrni.gif){ loading=lazy }
