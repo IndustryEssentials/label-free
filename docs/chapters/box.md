@@ -3,7 +3,7 @@
 ![img](https://files.catbox.moe/ohnrrq.gif){ loading=lazy }
 
 !!! note
-    4.0.0版本开始支持旋转框
+    3.3.0版本开始支持旋转框
 
 ## 常用快捷键
 
