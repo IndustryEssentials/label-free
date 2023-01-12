@@ -31,6 +31,7 @@ nav:
       - 创建项目: chapters/quickstart-createproject.md
       - 目标检测: chapters/box.md
       - 图像分割: chapters/seg.md
+      - 图像分类: chapters/classification.md
       - 数据导出: chapters/quickstart-export.md
   - 用户手册:
       - 部署: chapters/docker-deploy.md
