@@ -14,9 +14,9 @@
 - XML格式：每张图片会生成一个单独的XML文件，以图片名为XML文件名，该格式只会导出XML文件，不会导出图片。
 - json格式：将所有标注数据整合到一个json文件中下载，该格式只会导出json文件，不会导出图片。
 
-![](https://files.catbox.moe/a4voy7.png)
+![](../../assets/images/a4voy7.png)
 
-![](https://files.catbox.moe/fwb8e2.png)
+![](../../assets/images/fwb8e2.png)
 
 
 
@@ -31,6 +31,6 @@
 - voc格式：可点击弹窗上的格式说明超链查看具体内容，该格式下可选择是否导出图片。
 - coco格式：可点击弹窗上的格式说明超链查看具体内容，该格式下可选择是否导出图片。
 
-![](https://files.catbox.moe/i8jget.png)
+![](../../assets/images/i8jget.png)
 
-![](https://files.catbox.moe/r62qy0.png)
+![](../../assets/images/r62qy0.png)
