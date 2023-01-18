@@ -24,19 +24,31 @@
 
 </div>
 
+
+## 1 特性
+
+- **简单**。简化概念，快速上手，只为数据标注。
+- **高性能**。支持**超大数据集标注**、流畅**多人在线标注**体验。
+- **智能**。内置算法模型，支持**交互式辅助分割标注**，提高10×标注效率🚀🚀🚀。
+- **通用**。支持VOC、COCO等主流数据集格式导出。
+- **开放**。支持**免费私有化部署**，数据安全可靠。
+- **一键标注**。提供专业、一站式的数据标注服务。
+
 <div align="center">
 <table>
     <tr>
-        <td><img src="https://files.catbox.moe/7aczgb.gif"></td>
-        <td><img src="https://files.catbox.moe/3dzyj2.gif"></td>
+        <td><img src="./docs/assets/images/7aczgb.gif"></td>
+        <td><img src="./docs/assets/images/3dzyj2.gif"></td>
+        <td><img src="./docs/assets/images/yne8u4.gif"></td>
     <tr>
     <tr>
         <td align="center">目标检测</td>
         <td align="center">图像分割</td>
+        <td align="center">图像分类</td>
     <tr>
-
 </table>
 </div>
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -53,15 +65,6 @@
     </li>
   </ol>
 </details>
-
-## 特性
-- 一切为了提升标注生产效率。提供强大的标注交互界面、丰富的快捷键、流畅的多人协作等功能，让标注更加高效。
-- 支持交互式辅助分割标注。对比传统的分割标注，LabelFree 提供了交互式的分割标注，可以大大提升标注效率。
-- 易于部署，基于 Docker ，简单几条命令即可部署。
-- 数据安全性高。可私有化内网部署，不存在数据泄漏风险。
-- 高性能。原生支持对象存储，不限制标注数据大小，支持海量数据标注。
-- 一键标注。提供专业、一站式的数据标注服务。
-<p align="right">(<a href="#readme-top">返回顶部</a>)</p>
 
 <!-- GETTING STARTED -->
 ## 一键部署
@@ -109,51 +112,40 @@ labelfree@2022
 
 ## 1.创建项目
 
-**1.1 新建项目**
-点击“创建项目”按钮，进入创建项目页面
+1. 进入到【**项目**】界面，点击【**新建项目**】按钮，跳转至【**基础信息**】界面![](../assets/images/%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA.jpg)
 
-![image.png](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label/image.png)
+2. 点击【**下一步**】，跳转至【**标签管理**】界面
 
-**1.2 设置标签属性**
-在右侧的输入栏里输入标签名称，标签名称根据实际需求设置
+3. 点击【**下一步**】，跳转至【**其它信息**】界面
 
-![image.png](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label/image%20%281%29.png)
+4. 点击【**下一步**】进入【**上传数据集**】界面
+     - 包含预标注，需要上传相应格式的数据集
+     - 不包含预标注，可以上传任意格式的`zip`压缩包，LabelFree会自动解压缩并解析所有图片文件
 
-1.3 **输入项目描述信息**
-项目名称为自动生成的一个随机值，可根据实际需求更改
-![image.png](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label/image%20%282%29.png)
+5. 完成数据集上传，点击【**保存**】，即可完成项目的快速创建。
 
-1.4 **上传数据集**
-数据集只支持zip格式的压缩包，默认不包括标注信息，如果要上传包含标注信息的数据集，图片需放入 images 文件夹内，标注文件需放入 annotations 文件夹中。
+![](../assets/images/ith1md.png)
 
-![image.png](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label/image%20%283%29.png)
 
 ## 2.标注
 
 创建项目之后点击标注按钮进入标注环节
 
-![img](https://files.catbox.moe/7aczgb.gif)
+![img](./docs/assets/images/ohnrrq.gif)
 
-### 常用快捷键
+## 常用快捷键
 
-| 按键        | 功能         |
-| ----------- | ------------ |
-| Q           | 连续画框     |
-| W           | 单个画框     |
-| R           | 四点画框     |
-| S           | 提交         |
-| A           | 切换上一张图 |
-| D           | 切换下一张图 |
-| Z           | 撤销         |
-| V           | 恢复         |
-| Delete      | 删除         |
-| 滚轮；+ / - | 缩放图片     |
-| M           | 移动图片     |
-| F           | 隐藏类别     |
-| G           | 隐藏属性     |
-| H           | 隐藏选中     |
-| X           | 独显选中     |
-| K           | 显示全部     |
-| C           | 清空全部     |
+| 按键        | 功能         | 按键 | 功能 |
+| ----------- | ------------ | ---- | ---- |
+| Q           | 连续画框     | 滚轮；+ / - | 缩放图片 |
+| W           | 单个画框     | M | 移动图片 |
+| R           | 四点画框     | F | 隐藏类别 |
+| S           | 提交         | G | 隐藏属性 |
+| A           | 切换上一张图 | H | 隐藏选中 |
+| D           | 切换下一张图 | X | 独显选中 |
+| Z           | 撤销         | K | 显示全部 |
+| V           | 恢复         | C | 清空全部 |
+| Delete      | 删除         |      |      |
+
 
 更多信息见文档中心：[文档中心](https://labelfree.gitee.io/label-free/)
