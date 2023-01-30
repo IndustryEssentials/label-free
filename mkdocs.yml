@@ -7,7 +7,20 @@ theme:
     - navigation.instant
     - navigation.expand
   palette:
-    primary: teal
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   logo: assets/logo.svg
   favicon: assets/lbf.ico
 markdown_extensions:
@@ -26,6 +39,11 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.details
   - def_list
   - pymdownx.tasklist:
@@ -42,12 +60,13 @@ nav:
       - 数据导出: chapters/quickstart-export.md
   - 用户手册:
       - 部署: chapters/docker-deploy.md
+      - 配置: chapters/manual/conf.md
       - 项目管理:
           - 新建项目: chapters/manual/createproject.md
           - 项目详情: chapters/manual/projectdetail.md
-      - 用户管理: 
-        - 权限管理: chapters/manual/user.md
-        - 标注组管理: chapters/manual/group.md
+      - 用户管理:
+          - 权限管理: chapters/manual/user.md
+          - 标注组管理: chapters/manual/group.md
       - 一键标注: chapters/manual/OneclickLabeling.md
       - 数据导出: chapters/manual/export.md
   - 数据格式:
@@ -57,6 +76,6 @@ nav:
       # - LabelFree: chapters/labelfree.md
   - 关于: about.md
 plugins:
-   - glightbox
-   - search
+  - glightbox
+  - search
 use_directory_urls: false
