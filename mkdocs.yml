@@ -64,9 +64,15 @@ nav:
       - 项目管理:
           - 新建项目: chapters/manual/createproject.md
           - 项目详情: chapters/manual/projectdetail.md
+          # - 数据导入: chapters/manual/import.md
       - 用户管理:
           - 权限管理: chapters/manual/user.md
           - 标注组管理: chapters/manual/group.md
+      - 标注质检:
+          - 试标注质检: chapters/manual/samplelabelquality.md
+          - 标注质检: chapters/manual/labelquality.md
+      #     - 一致性评估: chapters/manual/consistency.md
+      #     - 准确性评估: chapters/manual/accuracy.md
       - 一键标注: chapters/manual/OneclickLabeling.md
       - 数据导出: chapters/manual/export.md
   - 数据格式:

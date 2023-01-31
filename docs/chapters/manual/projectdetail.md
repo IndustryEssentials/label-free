@@ -2,7 +2,7 @@
 
 在项目首页点击项目名称，可跳转到项目详情页，默认进入【**总览**】页面。
 
-![](https://files.catbox.moe/fo3iu4.png)
+![](./../../assets/images/fo3iu4.png)
 
 ### 总览
 
@@ -14,7 +14,7 @@
 - 已完成：已标注图片数量与项目总图片数量的比值。
 - 标签列表：项目中已标注的标签的列表，会展示标签的名称，数量及其占比（其中**labelfree_invalid_data**与**负样本**为系统给无效图片和负样本标注定义的标签名）。
 
-![](https://files.catbox.moe/uimln5.png)
+![](./../../assets/images/uimln5.png)
 
 ### 数据集
 
@@ -24,7 +24,7 @@
 
 可通过标注状态，标注员，标签进行筛选（标注状态选择已标注才可选择标注员）。
 
-![](https://files.catbox.moe/5u6oin.png)
+![](./../../assets/images/5u6oin.png)
 
 ### 文档
 
@@ -32,7 +32,7 @@
 
 该文档在**设置**中可再次上传，若多次上传，则以项目名_V1,V2,V3.....的形式命名，在该页可下拉选择查看各个版本的文档。
 
-![](https://files.catbox.moe/xs1csc.png)
+![](./../../assets/images/xs1csc.png)
 
 ### 设置
 
@@ -42,24 +42,24 @@
 
 进本信息设置中可编辑项目名称，项目描述，再次上传示例文档，点击保存即可更新项目信息（再次上传示例文档，会生成一个新的版本（项目名称_v2），之前上传的文档会留档，可在**文档**页面查看）。
 
-![](https://files.catbox.moe/plubkr.png)
+![](./../../assets/images/plubkr.png)
 
 #### 标注组设置
 
 标注组设置中可编辑项目关联的标注组。
 
-![](https://files.catbox.moe/f63j84.png)
+![](./../../assets/images/f63j84.png)
 
 #### 标签属性设置
 
 标签属性设置中可新增标签，但不可删除。
 
-![](https://files.catbox.moe/kydiq4.png)
+![](./../../assets/images/kydiq4.png)
 
 #### 去标注
 
 点击页面忧伤的【**去标注**】按钮，可跳转到标注界面。
 
-![](https://files.catbox.moe/pva41k.png)
+![](./../../assets/images/pva41k.png)
 
-![](https://files.catbox.moe/bqg05a.png)
+![](./../../assets/images/bqg05a.png)
