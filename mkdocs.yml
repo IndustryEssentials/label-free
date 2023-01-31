@@ -38,7 +38,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - admonition
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
