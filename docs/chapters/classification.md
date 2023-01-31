@@ -32,5 +32,5 @@
 | ++v++                              | 恢复          |
 | ++c++                              | 清空标签      |
 | ++f++                              | 隐藏/显示标签 |
-| ++mbutton++；++plus++ / ++hyphen++ | 缩放图片      |
+| :material-mouse-move-vertical: 或者 ++plus++ / ++hyphen++| 缩放图片      |
 | ++m++                              | 移动图片      |
