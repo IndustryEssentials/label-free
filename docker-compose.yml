@@ -39,18 +39,14 @@ services:
   label_seg:
     image: labelfree/open_seg:latest
     command: gunicorn --conf /code/config/gunicorn.py  --log-config /code/config/logging.conf --chdir /code/segmentation app:app
-    runtime: ${SERVER_RUNTIME}
     volumes:
       - ./seg_log:/var/log/gunicorn
     environment:
       FLASK_APP: labelfree.app
       SEG_DEBUG: "false"
-      NVIDIA_VISIBLE_DEVICES: all
-      FLAGS_fast_eager_deletion_mode: "true"
-      FLAGS_eager_delete_tensor_gb: 0.0
-      FLAGS_memory_fraction_of_eager_deletion: 1
       G_MAX_REQUESTS: 100
       G_MAX_REQUESTS_JITTER: 10
+      SERVER_RUNTIME: "runc"
     restart: always
 
   label_mysql:
