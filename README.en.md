@@ -59,7 +59,7 @@
 
 ## Features
 - **Simple**. Simplify operations and easy to get started.
-- **High Performance**. Supports **annotation of super large datasets** and provides a smooth **multi-person online annotation** experience.
+- **High Performance**. Supports **annotation of super large datasets** and provides a smooth **online Collaboration annotation** experience.
 - **Intelligent**. Built-in algorithm models support **assisted annotation based on the "Segment Anything" model**, improving annotation efficiency by 10x 🚀🚀🚀.
 - **Versatile**. Supports exporting to mainstream dataset formats such as VOC and COCO.
 - **Open**. Supports **free private deployment** for reliable data security.
