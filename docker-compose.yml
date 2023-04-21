@@ -21,6 +21,7 @@ services:
       FLASK_APP: labelfree.app
       LABEL_ENV: dev
       LABEL_BUILD: pro
+      LABELFREE_RELEASE: internal
     restart: always
 
   label_celery_worker:
