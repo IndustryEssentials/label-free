@@ -105,56 +105,5 @@ labelfree@2022
 Everything is done, let's start labeling! 🍻🍻🍻
 <p align="right">(<a href="#readme-top">Back to Top</a>)</p>
 
-## User Guide
 
-## 1. Create Project
-
-**1.1 Create a new project**
-Click the "Create Project" button to enter the project creation page.
-
-![image.png](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label/image.png)
-
-**1.2 Set tag properties**
-Enter the tag name in the input box on the right side, and set the tag name according to actual needs.
-
-![image.png](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label/image%20%281%29.png)
-
-1.3 **Enter project description information**
-The project name is an automatically generated random value, which can be changed according to actual needs.
-
-![image.png](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label/image%20%282%29.png)
-
-1.4 **Upload dataset**
-The dataset only supports zip compressed files, and does not include annotation information by default. If you want to upload a dataset that contains annotation information, put the images in the "images" folder and the annotation files in the "annotations" folder.
-
-![image.png](https://labelfree.oss-cn-shenzhen.aliyuncs.com/public/label/image%20%283%29.png)
-
-## 2. Labeling
-
-After creating a project, click the labeling button to enter the labeling process.
-
-![img](https://files.catbox.moe/7aczgb.gif)
-
-### Common Shortcut Keys
-
-| Key         | Function     |
-| ----------- | ------------ |
-| Q           | Draw box continuously |
-| W           | Draw single box |
-| R           | Draw box with four points |
-| S           | Submit |
-| A           | Switch to previous image |
-| D           | Switch to next image |
-| Z           | Undo |
-| V           | Redo |
-| Delete      | Delete |
-| Scroll / + / -  | Zoom image |
-| M           | Move image |
-| F           | Hide category |
-| G           | Hide property |
-| H           | Hide selected |
-| X           | Show only selected |
-| K           | Show all |
-| C           | Clear all |
-
-For more information, please refer to the documentation center: [https://industryessentials.github.io/label-free/](https://industryessentials.github.io/label-free/)
+For more information, please refer to the [documentation](https://industryessentials.github.io/labelfree_doc)
