@@ -10,8 +10,8 @@
   <h3 align="center">Welcome to LabelFree👋👋👋</h3>
 
   <p align="center">
-    LabelFree is an open, privately-deployable annotation system. It aims to provide an easy-to-use, reliable, and high-performance data annotation system to provide reliable underlying data support for algorithm services.
-    It now supports <b>Segment Anything</b> model for segmentation-assisted annotation 🚀🚀🚀
+    LabelFree is an open, privately-deployable annotation system. It aims to provide an easy-to-use, reliable, and high-performance data annotation system to provide reliable underlying data support for algorithm services.<br /><br />
+    LabelFree supports <b>Segment Anything</b> model for segmentation-assisted annotation 🚀🚀🚀
     <br />
     <a href="https://labelfree.gitee.io/label-free/"><strong>Explore the docs »</strong></a>
     <br />
