@@ -58,12 +58,12 @@
 </details>
 
 ## Features
-- Everything is designed to improve the efficiency of annotation production. It provides powerful annotation interactive interface, rich shortcut keys, and smooth multi-person collaboration functions to make annotation more efficient.
-- Support segmentation-assisted annotation based on **Segment Anything** model. Compared with traditional segmentation annotation, LabelFree provides interactive segmentation annotation, which can greatly improve the efficiency of annotation.
-- Easy to deploy, based on Docker, can be deployed with just a few simple commands.
-- High data security. It can be deployed in a private intranet, and there is no risk of data leakage.
-- High performance. Native support for object storage, no restriction on the size of annotation data, and support for massive data annotation.
-- One-click annotation. Provide professional, one-stop data annotation services.
+- **Simple**. Simplify operations and easy to get started.
+- **High Performance**. Supports **annotation of super large datasets** and provides a smooth **multi-person online annotation** experience.
+- **Intelligent**. Built-in algorithm models support **assisted annotation based on the "Segment Anything" model**, improving annotation efficiency by 10x 🚀🚀🚀.
+- **Versatile**. Supports exporting to mainstream dataset formats such as VOC and COCO.
+- **Open**. Supports **free private deployment** for reliable data security.
+- **One-click Annotation**. Provides professional, one-stop data annotation services.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Getting Started
