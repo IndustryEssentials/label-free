@@ -33,7 +33,6 @@
         <td><img src="https://files.catbox.moe/7aczgb.gif"></td>
         <td><img src="https://files.catbox.moe/3dzyj2.gif"></td>
         <td><img src="https://files.catbox.moe/yne8u4.gif"></td>
-
     <tr>
     <tr>
         <td align="center">目标检测</td>
