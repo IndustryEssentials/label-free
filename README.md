@@ -1,4 +1,5 @@
 <a name="readme-top"></a>
+简体中文 | [English](./README.en.md)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -10,7 +11,9 @@
   <h3 align="center">欢迎使用LabelFree👋👋👋</h3>
 
   <p align="center">
-    Labelfree 是一个开放的、可私有化部署的标注系统。旨在提供一个操作简单、数据可靠、高性能的数据标注系统，为算法服务提供可靠的底层数据支撑。
+    Labelfree 是一个开放的、可私有化部署的标注系统。旨在提供一个操作简单、数据可靠、高性能的数据标注系统，为算法服务提供可靠的底层数据支撑。<br /> 
+    <br />
+    全新支持  <b>Segment Anything</b>  模型进行分割辅助标注 🚀🚀🚀
     <br />
     <a href="https://labelfree.gitee.io/labelfree_doc/"><strong>文档 »</strong></a>
     <br />
@@ -61,7 +64,7 @@
 
 - **简单**。简化操作，快速上手。
 - **高性能**。支持**超大数据集标注**、流畅**多人在线标注**体验。
-- **智能**。内置算法模型，支持**交互式辅助分割标注**，提高10×标注效率🚀🚀🚀。
+- **智能**。内置算法模型，支持**基于 **Segment Anything** 模型辅助标注**，提高10×标注效率🚀🚀🚀。
 - **通用**。支持VOC、COCO等主流数据集格式导出。
 - **开放**。支持**免费私有化部署**，数据安全可靠。
 - **一键标注**。提供专业、一站式的数据标注服务。
@@ -110,3 +113,5 @@ labelfree@2022
 一切完成，开始标注工作吧！🍻🍻🍻
 <p align="right">(<a href="#readme-top">返回顶部</a>)</p>
 
+
+更多信息见 [文档中心](https://industryessentials.github.io/labelfree_doc)

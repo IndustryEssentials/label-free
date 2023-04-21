@@ -44,6 +44,9 @@ services:
       - ./seg_log:/var/log/gunicorn
     environment:
       FLASK_APP: labelfree.app
+      REDIS_HOST: label_redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD:
       SEG_DEBUG: "false"
       G_MAX_REQUESTS: 100
       G_MAX_REQUESTS_JITTER: 10
