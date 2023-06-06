@@ -15,7 +15,7 @@
     <br />
     全新支持  <b>Segment Anything</b>  模型进行分割辅助标注 🚀🚀🚀
     <br />
-    <a href="https://labelfree.gitee.io/labelfree_doc/"><strong>文档 »</strong></a>
+    <a href="https://industryessentials.github.io/labelfree_doc"><strong>文档 »</strong></a>
     <br />
     <br />
     ·
